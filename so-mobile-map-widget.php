@@ -7,6 +7,12 @@ Author: Piet Bos
 Author URI: http://senlinonline.com
 */
 
+/** add plugin textdomain */
+function so_mmw_init() {
+	load_plugin_textdomain('so_mmw', false, basename( dirname( __FILE__ ) ) . '/languages' );
+}
+add_action('plugins_loaded', 'so_mmw_init');
+
 class SO_MobileMapWidget extends WP_Widget {
 
 /** constructor */
@@ -27,6 +33,7 @@ class SO_MobileMapWidget extends WP_Widget {
 	$width = $instance['width'];
 	$height = $instance['height'];
 	$apikey = $instance['apikey'];
+	$description = $instance['description'];
 	
 	echo $before_widget;
 	
@@ -39,6 +46,9 @@ class SO_MobileMapWidget extends WP_Widget {
 		if($apikey != '')
 			echo '&key=' . $apikey;
 		echo '" width="' . $width . '" height="' . $height . '" /></a>';
+		if ( $description != '' ) {
+			echo '<div class="description">' . $description . '</div>';
+		}
 	echo '</div>';
 	
 	echo $after_widget;
@@ -55,6 +65,7 @@ class SO_MobileMapWidget extends WP_Widget {
 		$instance['width'] = strip_tags($new_instance['width']);
 		$instance['height'] = strip_tags($new_instance['height']);
 		$instance['apikey'] = strip_tags($new_instance['apikey']);
+		$instance['description'] = strip_tags($new_instance['description']);
 	    return $instance;
     }
     
@@ -67,6 +78,7 @@ class SO_MobileMapWidget extends WP_Widget {
 		$width = esc_attr($instance['width']);
 		$height = esc_attr($instance['height']);
 		$apikey = esc_attr($instance['apikey']);
+		$description = esc_attr($instance['description']);
 		?>
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title (optional):', 'so_mmw' ); ?></label>
@@ -95,6 +107,10 @@ class SO_MobileMapWidget extends WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_id( 'apikey' ); ?>"><?php _e( 'Google Static Maps API Key (optional):', 'so_mmw' ); ?></label>
             <input type="text" name="<?php echo $this->get_field_name( 'apikey' ); ?>" value="<?php echo $apikey; ?>" class="widefat" id="<?php echo $this->get_field_id( 'apikey' ); ?>" />
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php _e( 'Description shows under map image (optional):', 'so_mmw' ); ?></label>
+            <input type="textarea" name="<?php echo $this->get_field_name( 'description' ); ?>" value="<?php echo $description; ?>" class="widefat" id="<?php echo $this->get_field_id( 'description' ); ?>" />
         </p>
         <?php
 	}
