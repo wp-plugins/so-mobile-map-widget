@@ -1,10 +1,10 @@
 === SO Mobile Map Widget ===
 Contributors: senlin
-Donate link: http://example.com/
+Donate link: http://senl.in/PPd0na
 Tags: google maps, maps, mobile, image
 Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 0.1
+Tested up to: 3.6-beta3
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,8 @@ Once activated you can go to your Widgets (under Appearance in your backend) and
  6. Height in pixels.
  
  7. Google Static Maps API Key (optional). You can use the instructions in the above linked Developer Guide to activate the Static Maps API and create your key.
+ 
+ 8. Description (optional). You can use this field to add a description under the map image, fore example to inform your visitors that the image is clickable.
  
 Now you can save the widget and visit your website from a mobile device. When you click on the Static Map Image you will be directed to a Google Maps website that looks the same in almost all mobile browsers. If the site doesn't automatically fill in your Current Location (it helps if you have your GPS turned on), you can always type it in. Then it will give you the different possible routes on how to get to the destination, by different modes of transport where available. Once you are looking at the map, you can also choose between the different available Map Layers. 
 
@@ -93,9 +95,12 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 
 == Upgrade Notice ==
 
-none, first release
+version 0.2 - added optional description field
 
 == Changelog ==
+
+= 0.2 =
+Added optional description field
 
 = 0.1 =
 Release version
