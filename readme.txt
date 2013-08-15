@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: google maps, maps, mobile, image
 Requires at least: 3.3
-Tested up to: 3.6-beta3
-Stable tag: 0.2
+Tested up to: 3.6
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,10 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 version 0.2 - added optional description field
 
 == Changelog ==
+
+= 0.3 =
+* Compatible with WP 3.6
+* Prevent direct file access
 
 = 0.2 =
 Added optional description field
