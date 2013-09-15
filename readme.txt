@@ -3,7 +3,7 @@ Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: google maps, maps, mobile, image
 Requires at least: 3.3
-Tested up to: 3.6
+Tested up to: 3.6.1
 Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,6 +39,13 @@ Once activated you can go to your Widgets (under Appearance in your backend) and
 Now you can save the widget and visit your website from a mobile device. When you click on the Static Map Image you will be directed to a Google Maps website that looks the same in almost all mobile browsers. If the site doesn't automatically fill in your Current Location (it helps if you have your GPS turned on), you can always type it in. Then it will give you the different possible routes on how to get to the destination, by different modes of transport where available. Once you are looking at the map, you can also choose between the different available Map Layers. 
 
 You can of course also visit your site from a desktop or laptop computer, but as those devices do not have a GPS locator, they won't automatically fill in your Current Location.
+
+I have decided to only support this plugin through [Github](https://github.com/so-wp/so-mobile-map-widget/issues). Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.
+
+**PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS**
+
+Thanks for your understanding and cooperation.
+
 
 == Installation ==
 
@@ -80,6 +87,10 @@ The Google Static Maps API-key is optional, read the [Google documentation](http
 
 See above.
 
+= I have an issue with this plugin, where can I get support? =
+
+Please open an issue on [Github](https://github.com/so-wp/so-mobile-map-widget/issues)
+
 == Other Notes ==
 
 Background image of banner-772x250.png used as banner image on WordPress Plugin Repository via [uitdragerij](http://www.flickr.com/photos/uitdragerij/7516233128/)
@@ -95,7 +106,7 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 
 == Upgrade Notice ==
 
-version 0.2 - added optional description field
+version 0.3 - added security
 
 == Changelog ==
 
