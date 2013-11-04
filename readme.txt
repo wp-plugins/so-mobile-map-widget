@@ -111,6 +111,7 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 * Add version check
 * Update minimum required version (WP 3.6)
 * Compatible up to 3.7.1
+* add .pot and .po files
 * [HTML5 Validation](https://github.com/so-wp/so-mobile-map-widget/issues/3) suggested by [jecdk](https://github.com/jecdk)
 * add [visual refresh parameter](https://github.com/so-wp/so-mobile-map-widget/issues/2)
 
