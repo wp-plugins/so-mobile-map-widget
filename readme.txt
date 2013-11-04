@@ -2,9 +2,9 @@
 Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: google maps, maps, mobile, image
-Requires at least: 3.3
-Tested up to: 3.6.1
-Stable tag: 0.3
+Requires at least: 3.6
+Tested up to: 3.7.1
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,18 +104,36 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 5. The start of the route including directions at the bottom of the screen
 6. Choosing a different route on Satelite view
 
-== Upgrade Notice ==
-
-version 0.3 - added security
-
 == Changelog ==
 
+= 0.4 =
+
+* Add version check
+* Update minimum required version (WP 3.6)
+* Compatible up to 3.7.1
+* add .pot and .po files
+* [HTML5 Validation](https://github.com/so-wp/so-mobile-map-widget/issues/3) suggested by [jecdk](https://github.com/jecdk)
+* add [visual refresh parameter](https://github.com/so-wp/so-mobile-map-widget/issues/2)
+
 = 0.3 =
+
 * Compatible with WP 3.6
 * Prevent direct file access
 
 = 0.2 =
-Added optional description field
+
+* Added optional description field
 
 = 0.1 =
-Release version
+
+* Release version
+
+== Upgrade Notice ==
+
+= 0.4 =
+
+* upped minimum required version to WP 3.6
+
+= 0.3 =
+
+* added security
