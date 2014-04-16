@@ -2,7 +2,7 @@
 Plugin Name: SO Mobile Map Widget
 Plugin URI: http://so-wp.com/?p=16
 Description: This widget adds a mobile-optimised Google Static Map Image with a colored pin centered on a destination of your choosing. Once clicked it opens the Google mobile maps website where you can fill in your Current Location if it is not already there. Then you can see the directions from your location to the destination as well as the map with the route of your choice. Optimised for mobile use. Google Static Maps API-key is optional. 
-Version: 2013.12.25
+Version: 2014.04.16
 Author: Piet Bos
 Author URI: http://senlinonline.com
 Text Domain: so-mobile-map-widget
@@ -78,13 +78,13 @@ class SO_MobileMapWidget extends WP_Widget {
 		
 	// these are our widget options
 	$title = apply_filters( 'widget_title', $instance['title'] );
-	$daddr = $instance['daddr'];
-	$color = $instance['color'];
-	$zoom = $instance['zoom'];
-	$width = $instance['width'];
-	$height = $instance['height'];
-	$apikey = $instance['apikey'];
-	$description = apply_filters( 'widget_description', $instance['description'] );
+	$daddr = isset( $instance['daddr'] ) ? esc_attr( $instance['daddr'] ) : '';
+	$color = isset( $instance['color'] ) ? esc_attr( $instance['color'] ) : '';
+	$zoom = isset( $instance['zoom'] ) ? esc_attr( $instance['zoom'] ) : '';
+	$width = isset( $instance['width'] ) ? esc_attr( $instance['width'] ) : '';
+	$height = isset( $instance['height'] ) ? esc_attr( $instance['height'] ) : '';
+	$apikey = isset( $instance['apikey'] ) ? esc_attr( $instance['apikey'] ) : '';
+	$description = isset( $instance['description'] ) ? esc_attr( $instance['description'] ) : '';
 	
 	echo $before_widget;
 	

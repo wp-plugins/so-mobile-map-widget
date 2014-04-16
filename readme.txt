@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: google maps, maps, mobile, image
 Requires at least: 3.6
-Tested up to: 3.9-alpha
-Stable tag: 2013.12.25
+Tested up to: 3.9
+Stable tag: 2014.04.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,10 @@ Background image of banner-772x250.png used as banner image on WordPress Plugin 
 6. Choosing a different route on Satelite view
 
 == Changelog ==
+
+= 2014.04.16 =
+
+* Made sure that Widget Preview (WP 3.9 feature) works for the plugin
 
 = 2013.12.25 =
 
