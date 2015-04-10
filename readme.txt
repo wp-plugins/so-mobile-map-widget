@@ -95,10 +95,6 @@ See above.
 
 Please open an issue on [Github](https://github.com/senlin/so-mobile-map-widget/issues)
 
-== Other Notes ==
-
-Background image of banner-772x250.png used as banner image on WordPress Plugin Repository via [uitdragerij](http://www.flickr.com/photos/uitdragerij/7516233128/)
-
 == Screenshots ==
 
 1. Widget Settings in the WordPress backend
